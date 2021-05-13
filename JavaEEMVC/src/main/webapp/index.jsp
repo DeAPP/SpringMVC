@@ -8,6 +8,10 @@
 <h1><%= "Hello World!" %>
 </h1>
 <br/>
-<a href="hello-servlet">Hello Servlet22</a>
+<a href="/coco">点击跳转</a>
+<form method="post" action="/coco">
+    <input type="text" name="姓名" value="你好啊">
+    <input type="submit" value="提交">
+</form>
 </body>
 </html>
