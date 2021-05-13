@@ -5,12 +5,12 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="/coco">点击跳转</a>
-<form method="post" action="/coco">
-    <input type="text" name="姓名" value="你好啊">
+<h1><%= "Hello World!" %></h1>
+
+<form method="post" action="/testPOJO">
+    <input type="text" name="age" value="">
+    <input type="text" name="name" value="">
+    <input type="text" name="userData.authName" value="">
     <input type="submit" value="提交">
 </form>
 </body>
