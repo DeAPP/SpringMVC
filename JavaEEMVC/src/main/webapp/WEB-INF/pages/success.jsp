@@ -6,6 +6,5 @@
 </head>
 <body>
 得到后台返回值：${requestScope.language }<br/>
-请求：${requestScope.reqParam }<br/>
 </body>
 </html>

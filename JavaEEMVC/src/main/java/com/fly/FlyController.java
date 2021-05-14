@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.io.Writer;
 
 @Controller
 public class FlyController {
@@ -32,12 +34,18 @@ public class FlyController {
         return "success";
     }
 
+    @RequestMapping(value = "/testServeltWrite")
+    public void testServeltWrite(Writer writer) {
+        try {
+            writer.write("你好世界");
+        } catch (IOException e) {e.printStackTrace();
+
+        }
+    }
 
     @RequestMapping(value = "/testRequestHeader")
     public String testRequestHeader(@RequestHeader(value = "Accept-Language") String language, HttpServletRequest request) {
-        System.out.println("language=" + language);
         request.setAttribute("language", language);
-        request.setAttribute("reqParam", "我是请求域中的");
         return "success";
     }
 
