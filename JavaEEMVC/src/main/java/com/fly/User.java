@@ -1,12 +1,4 @@
 package com.fly;
-
-
-
-
-
-
-
-
 public class User {
     private Integer age;
     private String name;

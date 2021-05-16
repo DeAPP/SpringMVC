@@ -3,19 +3,6 @@ package com.fly;
 
 public class UserData {
     private String authName;
-
-
-
-
-
-
-
-
-
-
-
-
-
     public String getAuthName() {
         return authName;
     }
