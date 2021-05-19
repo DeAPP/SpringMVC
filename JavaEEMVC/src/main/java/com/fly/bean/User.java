@@ -3,6 +3,15 @@ package com.fly.bean;
 public class User {
     private Integer userid;
     private String nickname;
+    private String username;
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
     public Integer getUserid() {
         return userid;
@@ -23,8 +32,9 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "age=" + userid +
-                ", name='" + nickname + '\'' +
+                "userid=" + userid +
+                ", nickname='" + nickname + '\'' +
+                ", userName='" + username + '\'' +
                 '}';
     }
 }

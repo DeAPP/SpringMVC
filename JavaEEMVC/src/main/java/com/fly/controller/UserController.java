@@ -1,4 +1,4 @@
-package com.fly;
+package com.fly.controller;
 
 import com.fly.bean.User;
 import org.springframework.stereotype.Controller;

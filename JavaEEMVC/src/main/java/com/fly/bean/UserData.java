@@ -1,4 +1,4 @@
-package com.fly;
+package com.fly.bean;
 
 
 public class UserData {

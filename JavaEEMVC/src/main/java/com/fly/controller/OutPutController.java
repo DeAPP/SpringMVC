@@ -1,4 +1,4 @@
-package com.fly;
+package com.fly.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
